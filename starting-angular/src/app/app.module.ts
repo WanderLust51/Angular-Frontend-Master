@@ -7,18 +7,25 @@ import { AppComponent } from './app.component';
 // Componentes
 import { HeaderComponent } from './header/header.component';
 import { SubHeaderComponent } from './sub-header/sub-header.component';
-import { BannerComponent } from './main/banner/banner.component';
+import { IonicModule } from '@ionic/angular';
+import { MainComponent } from './main/main.component';
+import { BannerContentComponent } from './banner-content/banner-content.component';
+
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     SubHeaderComponent,
-    BannerComponent
+    MainComponent,
+    BannerContentComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    IonicModule.forRoot(),
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
