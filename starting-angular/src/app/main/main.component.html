@@ -2,3 +2,7 @@
 <input type="text" [(ngModel)]="elTexto">
 <p>{{ elTexto }}</p>
 <p [innerText]="elTexto"></p>
+
+<h1 (mouseover)="variable = true" (mouseleave)="variable = false">Mírame</h1>
+
+<span *ngIf="variable">Existo!!</span>
