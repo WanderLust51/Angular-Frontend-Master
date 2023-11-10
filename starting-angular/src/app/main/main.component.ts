@@ -7,6 +7,12 @@ import { FormsModule } from '@angular/forms';
   styleUrls: ['./main.component.scss']
 })
 export class MainComponent {
+
+  ye(something: any){
+    console.log(something)
+  }
+
   elTexto = ''
   variable = false
+  superform = {}
 }

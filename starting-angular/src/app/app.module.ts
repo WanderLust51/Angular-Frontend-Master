@@ -12,6 +12,7 @@ import { MainComponent } from './main/main.component';
 import { BannerContentComponent } from './banner-content/banner-content.component';
 
 import { FormsModule } from '@angular/forms';
+import { ChildMainComponent } from './child-main/child-main.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { FormsModule } from '@angular/forms';
     HeaderComponent,
     SubHeaderComponent,
     MainComponent,
-    BannerContentComponent
+    BannerContentComponent,
+    ChildMainComponent
   ],
   imports: [
     BrowserModule,

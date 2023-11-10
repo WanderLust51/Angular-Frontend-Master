@@ -3,6 +3,22 @@
 <p>{{ elTexto }}</p>
 <p [innerText]="elTexto"></p>
 
-<h1 (mouseover)="variable = true" (mouseleave)="variable = false">Mírame</h1>
+<span style="display: flex; align-items: center; margin: 2rem 0">
+    <h1 (mouseover)="variable = true" (mouseleave)="variable = false" style="display: inline;">Mírame</h1>
+    <span *ngIf="variable" style="margin-left: 2cm;">Existo!!</span>
+</span>
 
-<span *ngIf="variable">Existo!!</span>
+<div formArrayName="superform" style="display: flex; flex-direction: column;">
+    <h1>super form array</h1>
+    <span>
+        <input type="text" placeholder="nombre">
+    </span>
+    <span>
+        <input type="text" placeholder="apellido">
+    </span>
+    <span>
+        <input type="button" (click)="ye(superform)" value="botón">
+    </span>
+</div>
+
+<app-child-main [info]="elTexto"></app-child-main>
