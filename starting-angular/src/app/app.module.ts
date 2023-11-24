@@ -13,6 +13,8 @@ import { BannerContentComponent } from './banner-content/banner-content.componen
 
 import { FormsModule } from '@angular/forms';
 import { ChildMainComponent } from './child-main/child-main.component';
+import { HttpClientModule } from '@angular/common/http'
+
 
 @NgModule({
   declarations: [
@@ -25,6 +27,7 @@ import { ChildMainComponent } from './child-main/child-main.component';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
     IonicModule.forRoot(),
     FormsModule

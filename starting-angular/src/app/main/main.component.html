@@ -8,7 +8,7 @@
     <span *ngIf="variable" style="margin-left: 2cm;">Existo!!</span>
 </span>
 
-<div formArrayName="superform" style="display: flex; flex-direction: column;">
+<!-- <div formArrayName="superform" style="display: flex; flex-direction: column;">
     <h1>super form array</h1>
     <span>
         <input type="text" placeholder="nombre">
@@ -18,6 +18,18 @@
     </span>
     <span>
         <input type="button" (click)="ye(superform)" value="botón">
+    </span>
+</div> -->
+
+<span style="display: block; flex-direction: column; justify-content: start; margin: 2rem 1rem">
+    <h1>Cargar usuarios:</h1>
+    <button class="button" (click)="cargarUsuarios()">Cargar</button>
+</span>
+
+<div>
+    <span *ngFor="let user of usuarios" style="display: flex;">
+        <h4>{{ user.id }}.</h4>
+        <h4>{{ user.name }}</h4>
     </span>
 </div>
 
